@@ -1,0 +1,48 @@
+body {
+    font-family: arial, Helvetica, sans-serif;
+    font-size: large;
+    line-height: 1.5em;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+}
+
+li {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+a {
+    color: black;
+}
+
+label {
+    margin-right: 2em;
+    font-weight: bolder;
+}
+
+.llistaDiv {
+    margin-left: 2em;
+}
+
+input:read-only{
+    /*background-color: #eee;*/
+    cursor:default;
+    border:none;
+}
+
+.containerPrincipal{
+    background-image: url("../imatges/fons-cifp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.esquerra{
+    float:left;
+    width:auto;
+    margin-right:3em;
+}

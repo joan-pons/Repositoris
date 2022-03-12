@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" th:href="@{/imatges/logo-cifp.ico}"/>
+    <link rel="stylesheet" th:href="@{/css/estils.css}">
+    <title>Error</title>
+</head>
+<body>
+<div id="container">
+    <h1 th:text="${error}">Error</h1>
+    <p th:utext="${errorMessage}">Error message</p>
+    <p th:utext="${timestamp}">Ara</p>
+    <p th:utext="${path}">Path</p>
+    <p th:utext="${status}">Status</p>
+    <p th:utext="${message}">Message</p>
+    <p><a th:href="@{/index.html}">Tornar</a></p>
+</div>
+</body>
+</html>

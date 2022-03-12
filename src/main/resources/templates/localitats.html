@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" th:href="@{/imatges/logo-cifp.ico}"/>
+    <link rel="stylesheet" th:href="@{/css/estils.css}">
+    <title>Tria una localitat</title>
+</head>
+<body>
+<div id="container" class="containerPrincipal">
+    <div class="capsalPrincipal">
+        <div class="esquerra"><img th:src="@{/imatges/cropped-Logo_Pau.png}"></div>
+        <div>
+            <h3>Desenvolupament web al costat del servidor</h3>
+            <h2>Pràctica Spring 21-22</h2>
+        </div>
+    </div>
+    <div>
+
+        <h1>Tria una localitat</h1>
+        <ul>
+            <li th:each="localitat : ${localitats} "><a href="#" th:href="@{/web/modificaLocalitat(idLocalitat=${localitat.idLocalitat})}"
+                                                        th:text="${localitat.nomLocalitat}">Madagascar</a></li>
+        </ul>
+    </div>
+    <p><a href="../static/index.html" th:href="@{/index.html}">Tornar a l'index</a></p>
+</div>
+</body>
+</html>

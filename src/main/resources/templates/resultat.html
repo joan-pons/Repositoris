@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" th:href="@{/imatges/logo-cifp.ico}"/>
+    <link rel="stylesheet" th:href="@{/css/estils.css}">
+    <title>Tria una illa</title>
+</head>
+<body>
+<div id="container" class="containerPrincipal">
+    <div class="capsalPrincipal">
+        <div class="esquerra"><img th:src="@{/imatges/cropped-Logo_Pau.png}"></div>
+        <div>
+            <h3>Desenvolupament web al costat del servidor</h3>
+            <h2>Pràctica Spring 21-22</h2>
+        </div>
+    </div>
+    <div>
+        <h1 th:text="${titol}">Resultat</h1>
+        <p th:text="${missatge}">Missatge</p>
+        <div th:if="${localitat}">
+            <p><strong>Identificador: </strong>[[${localitat.idLocalitat}]]</p>
+            <p><strong>Nom: </strong>[[${localitat.nomLocalitat}]]</p>
+            <p><strong>Illa: </strong>[[${localitat.idIlla}]]</p>
+        </div>
+    </div>
+    <p><a href="../static/index.html" th:href="@{/index.html}">Tornar a l'index</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" th:href="@{/imatges/logo-cifp.ico}"/>
+    <title>Error</title>
+    <link rel="stylesheet" th:href="@{/css/estils.css}">
+</head>
+<body>
+<div id="container">
+    <h1>Error!</h1>
+    <p>Internal server error</p>
+    <h1 th:text="${error}">500</h1>
+    <p th:utext="${errorMessage}">Error java.lang.NullPointerException</p>
+    <p th:utext="${timestamp}">Error java.lang.NullPointerException</p>
+    <p th:utext="${path}">Error java.lang.NullPointerException</p>
+    <p th:utext="${status}">Error java.lang.NullPointerException</p>
+    <p th:utext="${message}">Error java.lang.NullPointerException</p>
+    <p><a th:href="@{/index.html}">Tornar</a></p>
+</div>
+</body>
+</html>
